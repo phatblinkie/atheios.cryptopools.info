@@ -11,12 +11,12 @@ echo missing config dir or pool binary, exiting, did you run make yet?
 exit 1
 fi
 
+
 #rename the callisto binary to atheios
-atheiosbinary="/home/$user/$coin.cryptopools.info/build/bin/open-$coin-pool"
-cp -f $poolbinary $"$coin"binary
+atheiosbinary="/home/$user/$coin.cryptopools.info/build/bin/open-atheios-pool"
+cp -f $poolbinary $atheiosbinary
 
-poolbinary=$pirlbinary
-
+poolbinary=$atheiosbinary
 
 
 if [ ! -e $config_dir ] || [ ! -e $poolbinary ]
